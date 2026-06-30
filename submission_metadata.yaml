@@ -1,0 +1,65 @@
+team_name: "VisionTrackAI"
+
+primary_contact:
+  name: "Supriya M"
+  email: "manjunathmanju5669@gmail.com"
+  phone: "+91-8660720311"
+
+team_members:
+  - name: "Supriya M"
+    email: "manjunathmanju5669@gmail.com"
+    role: "Team Lead"
+
+  - name: "Varshitha KS"
+    email: "ksvarshitha685@gmail.com"
+    role: "ML Engineer"
+
+  - name: "Dhanya KE"
+    email: "eshwarakovidhanya@gmail.com"
+    role: "Developer"
+
+  - name: "Krishnendu GS"
+    email: "krishnendugs16@gmail.com"
+    role: "Backend Developer"
+
+github_repo: "https://github.com/manjunathmanju5669-web/VisionTrackAI"
+
+sandbox_link: ""
+
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./output/submission.csv"
+
+compute:
+  platform: "Windows Laptop"
+  cpu_cores: 4
+  ram_gb: 8
+  python_version: "3.10"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - ChatGPT
+  - Claude AI
+
+ai_usage_summary: |
+  ChatGPT and Claude AI were used for project planning, debugging,
+  documentation, feature engineering discussions, and code review.
+  No candidate data was sent to external APIs during ranking.
+
+methodology_summary: |
+  VisionTrackAI is a rule-based candidate ranking system that combines
+  structured scoring, AI skill matching, semantic similarity,
+  behavioral analysis, recruiter engagement signals, profile
+  completeness, and disqualifier detection. Each candidate receives a
+  weighted composite score, followed by ranking and reasoning
+  generation. The final Top-100 candidates are exported as
+  output/submission.csv.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
